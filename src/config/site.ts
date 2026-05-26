@@ -190,7 +190,7 @@ export const site = {
         whatsapp: '5492214000001',
         whatsappMessage: '¡Hola Matilde! Quiero hacer un pedido para retirar en Citybell.',
         theme: 'secondary',
-        mapEmbedUrl: 'https://maps.google.com/maps?q=Calle+1149+467+entre+17+y+19+City+Bell+La+Plata+Argentina&output=embed',
+        mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.2623461517314!2d-58.055878924510495!3d-34.87475797186247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2de80ae0fa7f3%3A0xfd413df93f056a23!2sC.%20467%201149%2C%20B1896%20City%20Bell%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1779819578668!5m2!1ses!2sar',
       },
     ] as Branch[],
   },

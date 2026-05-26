@@ -163,8 +163,7 @@ export const site = {
         name: 'La Plata',
         subtitle: 'Casco y alrededores',
         modality: 'DELIVERY',
-        // TODO: confirmar dirección real
-        address: 'La Plata, Buenos Aires',
+        address: 'Calle 8 e/ 51 y 53 N° 973, La Plata',
         // TODO: confirmar horarios reales
         hours: 'Mar a Dom · 19:30 – 23:30',
         coverage: 'Casco urbano, Tolosa, City Bell centro',

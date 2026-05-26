@@ -29,6 +29,8 @@ export type Branch = {
   theme: 'primary' | 'secondary';
   /** Google Maps embed URL for mini-map */
   mapEmbedUrl: string;
+  /** Google Maps share link for "Ver en Google Maps" button */
+  mapsUrl?: string;
 };
 
 export type Pillar = { icon: string; title: string; text: string };
@@ -171,7 +173,8 @@ export const site = {
         whatsapp: '5492214000000',
         whatsappMessage: '¡Hola Matilde! Quiero hacer un pedido en La Plata.',
         theme: 'primary',
-        mapEmbedUrl: 'https://maps.google.com/maps?q=La+Plata+Buenos+Aires+Argentina&output=embed',
+        mapEmbedUrl: 'https://maps.app.goo.gl/MnDiX1vDfccQyd81A?output=embed',
+        mapsUrl: 'https://maps.app.goo.gl/MnDiX1vDfccQyd81A?g_st=ic',
       },
       {
         id: 'citybell',

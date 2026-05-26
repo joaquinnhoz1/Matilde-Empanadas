@@ -39,6 +39,11 @@ export function Branches() {
                 allowFullScreen
               />
             </div>
+            {lp.mapsUrl && (
+              <a href={lp.mapsUrl} target="_blank" rel="noopener noreferrer" className={s.mapsLink}>
+                📍 Ver en Google Maps
+              </a>
+            )}
             <dl className={s.meta}>
               <div><dt>Dirección</dt><dd>{lp.address}</dd></div>
               <div><dt>Horario</dt><dd>{lp.hours}</dd></div>

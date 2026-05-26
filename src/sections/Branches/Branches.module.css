@@ -113,6 +113,23 @@
   display: block;
 }
 
+/* MAPS LINK */
+.mapsLink {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--brand-cream);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  opacity: 0.85;
+  margin-bottom: clamp(10px, 1.5vh, 14px);
+  transition: opacity 0.15s;
+}
+
+.mapsLink:hover {
+  opacity: 1;
+}
+
 /* META */
 .meta {
   display: flex;

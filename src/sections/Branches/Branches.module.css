@@ -130,6 +130,10 @@
   opacity: 1;
 }
 
+.mapsLinkCream {
+  color: var(--brand-cream);
+}
+
 /* META */
 .meta {
   display: flex;

@@ -166,7 +166,7 @@ export const site = {
         address: 'Calle 8 e/ 51 y 53 N° 973, La Plata',
         // TODO: confirmar horarios reales
         hours: 'Mar a Dom · 19:30 – 23:30',
-        coverage: 'Casco urbano, Tolosa, City Bell centro',
+        coverage: 'Delivery · Casco urbano, Tolosa, City Bell',
         paymentMethods: 'Efectivo, transferencia, MP, débito',
         // TODO: número real con prefijo +549221XXXXXXX
         whatsapp: '5492214000000',
@@ -190,6 +190,7 @@ export const site = {
         whatsappMessage: '¡Hola Matilde! Quiero hacer un pedido para retirar en Citybell.',
         theme: 'secondary',
         mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.2623461517314!2d-58.055878924510495!3d-34.87475797186247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2de80ae0fa7f3%3A0xfd413df93f056a23!2sC.%20467%201149%2C%20B1896%20City%20Bell%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1779819578668!5m2!1ses!2sar',
+        mapsUrl: 'https://maps.app.goo.gl/K3zCi3PLKJ25tNEXA?g_st=ic',
       },
     ] as Branch[],
   },

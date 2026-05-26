@@ -47,7 +47,7 @@ export function Branches() {
             <dl className={s.meta}>
               <div><dt>Dirección</dt><dd>{lp.address}</dd></div>
               <div><dt>Horario</dt><dd>{lp.hours}</dd></div>
-              <div><dt>Zona de delivery</dt><dd>{lp.coverage}</dd></div>
+              <div><dt>Modalidad</dt><dd>{lp.coverage}</dd></div>
               <div><dt>Formas de pago</dt><dd>{lp.paymentMethods}</dd></div>
             </dl>
             <a
@@ -78,6 +78,11 @@ export function Branches() {
                 allowFullScreen
               />
             </div>
+            {cb.mapsUrl && (
+              <a href={cb.mapsUrl} target="_blank" rel="noopener noreferrer" className={`${s.mapsLink} ${s.mapsLinkCream}`}>
+                📍 Ver en Google Maps
+              </a>
+            )}
             <dl className={`${s.meta} ${s.metaCream}`}>
               <div><dt>Dirección</dt><dd>{cb.address}</dd></div>
               <div><dt>Horario</dt><dd>{cb.hours}</dd></div>

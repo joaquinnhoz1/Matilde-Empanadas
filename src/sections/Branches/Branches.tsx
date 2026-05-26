@@ -29,8 +29,15 @@ export function Branches() {
           <div className={s.cardInner}>
             <h3 className={s.name}>{lp.name}</h3>
             <div className={s.sub}>{lp.subtitle} · {lp.modality}</div>
-            <div className={`${s.map} photo photo--cream`}>
-              <span className={s.mapPin}>📍</span>
+            <div className={s.map}>
+              <iframe
+                src={lp.mapEmbedUrl}
+                className={s.mapIframe}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={`Mapa ${lp.name}`}
+                allowFullScreen
+              />
             </div>
             <dl className={s.meta}>
               <div><dt>Dirección</dt><dd>{lp.address}</dd></div>
@@ -56,8 +63,15 @@ export function Branches() {
           <div className={s.cardInner}>
             <h3 className={`${s.name} ${s.nameCream}`}>{cb.name}</h3>
             <div className={`${s.sub} ${s.subCream}`}>{cb.subtitle} · {cb.modality}</div>
-            <div className={`${s.map} photo photo--cream`}>
-              <span className={s.mapPin}>📍</span>
+            <div className={s.map}>
+              <iframe
+                src={cb.mapEmbedUrl}
+                className={s.mapIframe}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={`Mapa ${cb.name}`}
+                allowFullScreen
+              />
             </div>
             <dl className={`${s.meta} ${s.metaCream}`}>
               <div><dt>Dirección</dt><dd>{cb.address}</dd></div>

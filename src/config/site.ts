@@ -107,7 +107,7 @@ export const site = {
     feature: {
       tag: '01 / EMPANADAS',
       title: 'Diez sabores,\nuna sola masa.',
-      description: 'Carne cortada a cuchillo, pollo, verdura, humita, jamón y queso, y las que vamos sumando.',
+      description: 'Malbec, bondiola, teriyaki, cheeseburga, veggie y más. Dieciséis sabores, todos al disco.',
       ctaLabel: 'Ver carta completa →',
       photoTone: 'food-bright' as const,
     },

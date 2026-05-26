@@ -18,7 +18,11 @@
       "WebFetch(domain:www.tepido.com.ar)",
       "mcp__Claude_in_Chrome__navigate",
       "Bash(ls \"C:/Users/Joaqu/Desktop/\" --ignore=node_modules 2>/dev/null | head -30)",
-      "mcp__Claude_in_Chrome__get_page_text"
+      "mcp__Claude_in_Chrome__get_page_text",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git commit *)"
     ]
   }
 }

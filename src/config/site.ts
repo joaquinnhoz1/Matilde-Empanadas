@@ -162,7 +162,7 @@ export const site = {
         subtitle: 'Casco y alrededores',
         modality: 'DELIVERY',
         // TODO: confirmar dirección real
-        address: 'Calle 50 entre 7 y 8',
+        address: 'La Plata, Buenos Aires',
         // TODO: confirmar horarios reales
         hours: 'Mar a Dom · 19:30 – 23:30',
         coverage: 'Casco urbano, Tolosa, City Bell centro',
@@ -171,7 +171,7 @@ export const site = {
         whatsapp: '5492214000000',
         whatsappMessage: '¡Hola Matilde! Quiero hacer un pedido en La Plata.',
         theme: 'primary',
-        mapEmbedUrl: 'https://maps.google.com/maps?q=Calle+50+entre+7+y+8+La+Plata+Argentina&output=embed',
+        mapEmbedUrl: 'https://maps.google.com/maps?q=La+Plata+Buenos+Aires+Argentina&output=embed',
       },
       {
         id: 'citybell',

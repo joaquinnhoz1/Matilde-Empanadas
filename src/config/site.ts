@@ -161,7 +161,8 @@ export const site = {
         name: 'La Plata',
         subtitle: 'Casco y alrededores',
         modality: 'DELIVERY',
-        address: '467 1149 entre 17 y 19, City Bell, La Plata',
+        // TODO: confirmar dirección real
+        address: 'Calle 50 entre 7 y 8',
         // TODO: confirmar horarios reales
         hours: 'Mar a Dom · 19:30 – 23:30',
         coverage: 'Casco urbano, Tolosa, City Bell centro',
@@ -170,14 +171,14 @@ export const site = {
         whatsapp: '5492214000000',
         whatsappMessage: '¡Hola Matilde! Quiero hacer un pedido en La Plata.',
         theme: 'primary',
-        mapEmbedUrl: 'https://maps.google.com/maps?q=Calle+1149+467+entre+17+y+19+City+Bell+La+Plata+Argentina&output=embed',
+        mapEmbedUrl: 'https://maps.google.com/maps?q=Calle+50+entre+7+y+8+La+Plata+Argentina&output=embed',
       },
       {
         id: 'citybell',
         name: 'Citybell',
         subtitle: 'Pasá a retirar',
         modality: 'TAKE AWAY',
-        address: 'Cantilo y 13B, City Bell',
+        address: '467 1149 entre 17 y 19, City Bell, La Plata',
         // TODO: confirmar horarios reales
         hours: 'Mar a Dom · 19:00 – 23:00',
         coverage: 'Solo take away · hacés el pedido y pasás',
@@ -186,7 +187,7 @@ export const site = {
         whatsapp: '5492214000001',
         whatsappMessage: '¡Hola Matilde! Quiero hacer un pedido para retirar en Citybell.',
         theme: 'secondary',
-        mapEmbedUrl: 'https://maps.google.com/maps?q=Cantilo+13B+City+Bell+La+Plata+Argentina&output=embed',
+        mapEmbedUrl: 'https://maps.google.com/maps?q=Calle+1149+467+entre+17+y+19+City+Bell+La+Plata+Argentina&output=embed',
       },
     ] as Branch[],
   },

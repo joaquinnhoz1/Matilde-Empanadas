@@ -1,10 +1,15 @@
+import { useState } from 'react';
 import { site } from '@/config/site';
+import { carta } from '@/config/carta';
+import { CartaModal } from './CartaModal';
 import s from './Products.module.css';
 
 export function Products() {
   const p = site.products;
   const [vinos, dips] = p.secondary;
   const extras = p.extras;
+  const [openSection, setOpenSection] = useState<string | null>(null);
+  const activeSection = carta.find(c => c.id === openSection) ?? null;
 
   return (
     <section id="productos" className={s.section}>
@@ -18,8 +23,8 @@ export function Products() {
 
       <div className={s.bento}>
         {/* Large — Empanadas */}
-        <article className={s.bentoLarge}>
-          <div className={`${s.photoLarge} photo photo--lasagna`}>
+        <article className={`${s.bentoLarge} ${s.clickable}`} onClick={() => setOpenSection('empanadas')}>
+          <div className={`${s.photoLarge} photo photo--food-bright`}>
             <span className="sr-only">Empanadas variadas</span>
           </div>
           <div className={s.bentoContent}>
@@ -35,9 +40,9 @@ export function Products() {
         </article>
 
         {/* Small — Vinos */}
-        <article className={`${s.bentoSmall} ${s.bentoSmallPink}`}>
+        <article className={`${s.bentoSmall} ${s.bentoSmallPink} ${s.clickable}`} onClick={() => setOpenSection('vinos')}>
           <div className={`${s.photoSm} photo photo--wine`}>
-            <span className="sr-only">Botella</span>
+            <span className="sr-only">Botella de vino</span>
           </div>
           <div className={s.tag}>{vinos.tag}</div>
           <h3 className={s.bentoTitleSm}>{vinos.title}</h3>
@@ -46,7 +51,7 @@ export function Products() {
         </article>
 
         {/* Small — Dips */}
-        <article className={`${s.bentoSmall} ${s.bentoSmallYellow}`}>
+        <article className={`${s.bentoSmall} ${s.bentoSmallYellow} ${s.clickable}`} onClick={() => setOpenSection('dips')}>
           <div className={`${s.photoSm} photo photo--dips`}>
             <span className="sr-only">Dips</span>
           </div>
@@ -54,6 +59,17 @@ export function Products() {
           <h3 className={s.bentoTitleSm}>{dips.title}</h3>
           <p className={s.bentoTextSm}>{dips.description}</p>
           <span className={s.bentoLink}>{dips.ctaLabel}</span>
+        </article>
+
+        {/* Small — Pizzas */}
+        <article className={`${s.bentoSmall} ${s.bentoSmallBlue} ${s.clickable}`} onClick={() => setOpenSection('pizzas')}>
+          <div className={`${s.photoSm} photo photo--pizza`}>
+            <span className="sr-only">Pizza</span>
+          </div>
+          <div className={s.tag}>04 / PIZZAS</div>
+          <h3 className={s.bentoTitleSm}>Masa pala napolitana.</h3>
+          <p className={s.bentoTextSm}>Fugazzeta, fungi, cuatro quesos y más.</p>
+          <span className={s.bentoLink}>Ver pizzas →</span>
         </article>
 
         {/* Extras */}
@@ -70,6 +86,10 @@ export function Products() {
           <span className={s.bentoLink}>{extras.ctaLabel}</span>
         </article>
       </div>
+
+      {activeSection && (
+        <CartaModal section={activeSection} onClose={() => setOpenSection(null)} />
+      )}
     </section>
   );
 }

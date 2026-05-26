@@ -73,4 +73,9 @@ button:active:not(:disabled) { transform: scale(0.98); }
   background-size: cover;
   background-position: center 55%;
 }
+.photo--pizza {
+  background-image: url('/carta/pizzas/Pizza%20Fungi.jpg');
+  background-size: cover;
+  background-position: center;
+}
 

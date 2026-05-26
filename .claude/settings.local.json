@@ -14,7 +14,11 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(ls \"C:\\\\Users\\\\Joaqu\\\\Desktop\\\\Matilde Empanadas - Fotos\\\\03 - Combos y Promociones\")",
       "Bash(ls \"C:\\\\Users\\\\Joaqu\\\\Desktop\\\\Matilde Empanadas - Fotos\\\\02 - Empanadas\" | grep -i dino)",
-      "Bash(cp \"/c/Users/Joaqu/Desktop/Matilde Empanadas - Fotos/03 - Combos y Promociones/Combo AHORRA \\\\$2.700.jpg\" \"/c/Users/Joaqu/Desktop/IMPULSO WEB/Matilde Empanadas/public/fotos/empanadas-portada.jpg\" && echo \"OK\")"
+      "Bash(cp \"/c/Users/Joaqu/Desktop/Matilde Empanadas - Fotos/03 - Combos y Promociones/Combo AHORRA \\\\$2.700.jpg\" \"/c/Users/Joaqu/Desktop/IMPULSO WEB/Matilde Empanadas/public/fotos/empanadas-portada.jpg\" && echo \"OK\")",
+      "WebFetch(domain:www.tepido.com.ar)",
+      "mcp__Claude_in_Chrome__navigate",
+      "Bash(ls \"C:/Users/Joaqu/Desktop/\" --ignore=node_modules 2>/dev/null | head -30)",
+      "mcp__Claude_in_Chrome__get_page_text"
     ]
   }
 }

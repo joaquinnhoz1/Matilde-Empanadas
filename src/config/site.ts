@@ -173,7 +173,7 @@ export const site = {
         whatsapp: '5492214000000',
         whatsappMessage: '¡Hola Matilde! Quiero hacer un pedido en La Plata.',
         theme: 'primary',
-        mapEmbedUrl: 'https://maps.app.goo.gl/MnDiX1vDfccQyd81A?output=embed',
+        mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.5882010452924!2d-57.9495903!3d-34.916782399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e70052ab03d9%3A0xa404a47c7da91b53!2sMatilde%2C%20Empanadas%20al%20Disco%20y%20Vinito!5e0!3m2!1ses!2sar!4v1779819448513!5m2!1ses!2sar',
         mapsUrl: 'https://maps.app.goo.gl/MnDiX1vDfccQyd81A?g_st=ic',
       },
       {

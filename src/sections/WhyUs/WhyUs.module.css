@@ -1,0 +1,99 @@
+.section {
+  background: var(--brand-paper);
+  color: var(--brand-ink);
+  padding: clamp(56px, 9vh, 100px) var(--section-px);
+  position: relative;
+  overflow: hidden;
+}
+
+.kicker {
+  font-size: 12px;
+  letter-spacing: 0.32em;
+  font-weight: 700;
+  color: var(--brand-orange);
+  margin-bottom: clamp(16px, 2.5vh, 28px);
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(44px, 7vh, 96px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin-bottom: clamp(32px, 5vh, 60px);
+  position: relative;
+  z-index: 2;
+  color: var(--brand-ink);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(16px, 2.5vh, 28px);
+}
+
+.card {
+  background: var(--brand-ink);
+  color: var(--brand-cream);
+  padding: clamp(22px, 3.5vh, 36px);
+  border-radius: 18px;
+  position: relative;
+}
+
+.num {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 6vh, 64px);
+  color: var(--brand-yellow);
+  line-height: 0.85;
+  margin-bottom: clamp(10px, 1.8vh, 16px);
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.8vh, 26px);
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: clamp(8px, 1.5vh, 14px);
+}
+
+.cardText {
+  font-size: clamp(13px, 1.8vh, 15px);
+  line-height: 1.55;
+  opacity: 0.78;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px var(--section-px);
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 28px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card {
+    padding: 22px;
+  }
+
+  .num {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .cardText {
+    font-size: 14px;
+  }
+}

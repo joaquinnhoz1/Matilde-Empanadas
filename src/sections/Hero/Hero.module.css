@@ -1,0 +1,324 @@
+.hero {
+  background: var(--brand-ink);
+  color: var(--brand-cream);
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 44px);
+  display: flex;
+  flex-direction: column;
+}
+
+.repulgue {
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  width: 360px;
+  height: 360px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 48px;
+  padding: clamp(4px, 0.8vh, 10px) var(--section-px) clamp(20px, 4vh, 56px);
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  align-items: center;
+  align-content: start;
+}
+
+/* Left content stack */
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* LEFT */
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 7px 14px;
+  border-radius: var(--r-pill);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  color: var(--brand-cream);
+  margin-bottom: clamp(12px, 1.8vh, 20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.kickerDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--brand-orange);
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 7.2vh, 88px);
+  line-height: 1.0;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  margin: 0 0 clamp(12px, 1.8vh, 20px) 0;
+  color: var(--brand-cream);
+}
+
+.titleScript {
+  font-family: var(--font-script);
+  font-weight: 700;
+  color: var(--brand-orange);
+  text-transform: none;
+  font-size: 0.95em;
+  display: inline-block;
+  transform: rotate(-3deg) translateY(4px);
+  transform-origin: center;
+}
+
+.titleHighlight {
+  background: var(--brand-yellow);
+  color: var(--brand-ink);
+  padding: 0 14px;
+  display: inline-block;
+  transform: skew(-4deg);
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.lead {
+  font-size: clamp(14px, 1.8vh, 18px);
+  line-height: 1.5;
+  max-width: 460px;
+  margin-top: clamp(10px, 1.8vh, 28px);
+  margin-bottom: clamp(12px, 2vh, 32px);
+  color: rgba(250, 245, 236, 0.75);
+}
+
+/* CTA BOX */
+.ctaBox {
+  background: var(--brand-cream);
+  color: var(--brand-ink);
+  padding: clamp(14px, 2.2vh, 24px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.14), 0 1px 0 rgba(0,0,0,0.06);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  max-width: 520px;
+  width: 100%;
+  margin-top: clamp(20px, 3vh, 40px);
+}
+
+.ctaLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  color: var(--brand-orange);
+  margin-bottom: clamp(8px, 1.2vh, 14px);
+}
+
+.ctaArrow {
+  color: var(--brand-ink);
+}
+
+.ctaRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* BUTTON STICKER */
+.btnSticker {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--brand-orange);
+  color: #fff;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-family: var(--font-body);
+  min-width: 0;
+}
+
+.btnStickerBlue {
+  background: var(--brand-blue);
+}
+
+.btnText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  min-width: 0;
+}
+
+.btnTop {
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.btnName {
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+.btnSub {
+  font-size: 11px;
+  opacity: 0.85;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+/* RIGHT */
+.right {
+  position: relative;
+  min-height: clamp(360px, 55vh, 560px);
+}
+
+.photoMain {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  right: 40px;
+  bottom: clamp(30px, 5vh, 60px);
+  border-radius: 24px;
+  transform: rotate(3deg) scale(1.056);
+  border: 6px solid var(--brand-cream);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.sticker {
+  position: absolute;
+  top: -10px;
+  right: 24px;
+  background: var(--brand-yellow);
+  color: var(--brand-ink);
+  padding: 14px 18px;
+  border-radius: var(--r-pill);
+  transform: rotate(8deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  width: 130px;
+  height: 130px;
+  z-index: 3;
+}
+
+.stickerLine {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+}
+
+.stickerBig {
+  font-family: var(--font-display);
+  font-size: 18px;
+  line-height: 0.95;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.stickerYr {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.miniPhoto {
+  position: absolute;
+  bottom: 0;
+  left: -80px;
+  width: 202px;
+  height: 245px;
+  border-radius: 16px;
+  transform: rotate(-6deg);
+  border: 5px solid var(--brand-cream);
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.bottomCurve {
+  display: none;
+}
+
+/* ── PHOTO PLACEHOLDERS ── */
+:global(.photo) {
+  background-color: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+:global(.photo--food-bright) { background-color: rgba(250, 70, 22, 0.18); }
+:global(.photo--wine)        { background-color: rgba(94, 138, 180, 0.30); }
+:global(.photo--dino)        { background-color: rgba(255, 199, 44, 0.25); }
+:global(.photo--dips)        { background-color: rgba(255, 199, 44, 0.25); }
+:global(.photo--cocina)      { background-color: rgba(255, 255, 255, 0.08); }
+:global(.photo--cream)       { background-color: rgba(250, 245, 236, 0.15); }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr;
+    padding: clamp(16px, 3vh, 36px) var(--section-px);
+    gap: 0;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .title {
+    font-size: 64px;
+    line-height: 0.92;
+  }
+
+  .lead {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+
+  .ctaBox {
+    max-width: 100%;
+  }
+
+  .ctaRow {
+    grid-template-columns: 1fr;
+  }
+
+  .heroPhotoBox {
+    position: relative;
+    margin-top: 12px;
+  }
+
+  .bottomCurve {
+    height: 40px;
+  }
+
+  .repulgue {
+    display: none;
+  }
+}

@@ -1,0 +1,35 @@
+/*
+ * FONTS
+ *
+ * Currently using Google Fonts fallbacks:
+ *   Anton    — fallback for STINGER (display, heavy condensed)
+ *   DM Sans  — fallback for NEXA (body, neutral grotesque)
+ *   Caveat   — fallback for MATILDE script (lettering, signature)
+ *
+ * When real Stinger + Nexa licenses arrive:
+ *   1. Drop .woff2 files in /public/fonts/
+ *   2. Replace the @import below with @font-face blocks
+ *   3. Update --font-display / --font-body in tokens.css if names differ
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
+/* Example for real fonts later:
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('/fonts/Stinger-Heavy.woff2') format('woff2');
+  font-weight: 800 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('/fonts/Nexa-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+*/

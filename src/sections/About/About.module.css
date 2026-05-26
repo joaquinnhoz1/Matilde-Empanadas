@@ -1,0 +1,175 @@
+.section {
+  padding: clamp(60px, 10vh, 120px) var(--section-px);
+  background: var(--brand-ink);
+  color: var(--brand-cream);
+}
+
+.kickerBox {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: clamp(16px, 2.5vh, 28px);
+}
+
+.kickerLine {
+  flex: 0 0 60px;
+  height: 1.5px;
+  background: var(--brand-orange);
+}
+
+.kicker {
+  font-size: 12px;
+  letter-spacing: 0.32em;
+  font-weight: 700;
+  color: var(--brand-orange);
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 6.5vh, 88px);
+  line-height: 0.95;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: clamp(40px, 7vh, 80px);
+}
+
+.titleScript {
+  font-family: var(--font-script);
+  font-weight: 700;
+  color: var(--brand-orange);
+  text-transform: none;
+  font-size: 0.95em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 7vh, 80px);
+  align-items: center;
+}
+
+.photoWrap {
+  position: relative;
+}
+
+.photo {
+  width: 100%;
+  height: clamp(320px, 55vh, 580px);
+  border-radius: var(--r-sm);
+  transform: rotate(-2deg);
+  position: relative;
+  z-index: 1;
+}
+
+.stamp1 {
+  position: absolute;
+  top: 28px;
+  right: -20px;
+  background: var(--brand-orange);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 6px;
+  transform: rotate(8deg);
+  font-family: var(--font-display);
+  font-size: clamp(16px, 2.5vh, 22px);
+  letter-spacing: 0.04em;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.stamp2 {
+  position: absolute;
+  bottom: -14px;
+  left: 24px;
+  background: var(--brand-yellow);
+  color: var(--brand-ink);
+  padding: 10px 18px;
+  border-radius: var(--r-pill);
+  transform: rotate(-6deg);
+  font-family: var(--font-display);
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  z-index: 3;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.text {
+  font-size: clamp(15px, 2.2vh, 18px);
+  line-height: 1.65;
+  color: var(--brand-cream);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 2vh, 18px);
+}
+
+.text p {
+  margin: 0;
+}
+
+.quoteBox {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--brand-cream);
+  padding: clamp(20px, 3vh, 28px) clamp(18px, 3vw, 32px);
+  border-radius: 16px;
+  margin-top: 16px;
+  position: relative;
+}
+
+.quoteMark {
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  font-family: var(--font-display);
+  font-size: clamp(44px, 7vh, 64px);
+  color: var(--brand-orange);
+  line-height: 1;
+}
+
+.quoteTxt {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 3vh, 28px);
+  line-height: 1.15;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px var(--section-px) 60px;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 36px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .photo {
+    height: 280px;
+    transform: rotate(-1.5deg);
+  }
+
+  .stamp1 {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .quoteTxt {
+    font-size: 22px;
+  }
+
+  .quoteBox {
+    padding: 24px 22px;
+  }
+}

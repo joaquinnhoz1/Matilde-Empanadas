@@ -1,0 +1,76 @@
+/* Base typography + utility helpers. Components should import their own .module.css. */
+
+body {
+  background-color: #ffffff;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-base);
+  font-feature-settings: 'ss01' 1;
+}
+
+h1, h2, h3 { font-family: var(--font-display); font-weight: normal; }
+
+a {
+  color: inherit;
+  transition: opacity var(--t-fast) var(--ease-out);
+}
+a:hover { opacity: 0.7; }
+
+button { transition: transform var(--t-fast) var(--ease-out), opacity var(--t-fast) var(--ease-out); }
+button:hover:not(:disabled) { opacity: 0.92; }
+button:active:not(:disabled) { transform: scale(0.98); }
+
+::selection { background: var(--brand-orange); color: var(--brand-cream); }
+
+/* Visually hidden but available to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── FOTOS DE PRODUCTO ── */
+.photo--food-bright {
+  background-image: url('/fotos/empanadas-portada.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.photo--wine {
+  background-image: url('/fotos/vino.jpg');
+  background-size: cover;
+  background-position: center 65%;
+}
+.photo--dips {
+  background-image: url('/fotos/dips.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.photo--cocina {
+  background-image: url('/fotos/empanadas-cocina.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.photo--dino {
+  background-image: url('/fotos/dino-kids.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.photo--lasagna {
+  background-image: url('/fotos/lasagna.jpg');
+  background-size: cover;
+  background-position: center 55%;
+}
+

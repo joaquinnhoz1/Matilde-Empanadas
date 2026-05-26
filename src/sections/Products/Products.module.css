@@ -1,0 +1,237 @@
+.section {
+  padding: clamp(36px, 6vh, 60px) var(--section-px) clamp(60px, 10vh, 120px);
+  background: var(--brand-ink);
+  color: var(--brand-cream);
+}
+
+.head {
+  margin-bottom: clamp(28px, 5vh, 56px);
+}
+
+.kicker {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  color: var(--brand-orange);
+  margin-bottom: 14px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 7vh, 96px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.titleScript {
+  font-family: var(--font-script);
+  font-weight: 700;
+  color: var(--brand-orange);
+  text-transform: none;
+}
+
+/* BENTO GRID */
+.bento {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+/* Large card */
+.bentoLarge {
+  grid-column: 1;
+  grid-row: span 2;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--brand-cream);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.photoLarge {
+  width: 100%;
+  height: clamp(200px, 32vh, 380px);
+  flex-shrink: 0;
+}
+
+.bentoContent {
+  padding: clamp(20px, 3.2vh, 36px);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tag {
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  margin-bottom: 14px;
+  opacity: 0.85;
+}
+
+.bentoTitle {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 4.5vh, 52px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin-bottom: clamp(10px, 1.8vh, 16px);
+}
+
+.bentoText {
+  font-size: clamp(13px, 1.8vh, 16px);
+  line-height: 1.55;
+  opacity: 0.9;
+  margin-bottom: clamp(14px, 2.5vh, 24px);
+  flex: 1;
+}
+
+.bentoLink {
+  font-size: 13px;
+  font-weight: 700;
+  color: inherit;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 2px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+/* Small cards */
+.bentoSmall {
+  border-radius: 20px;
+  padding: clamp(18px, 3vh, 28px);
+  color: var(--brand-ink);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.bentoSmallPink { background: var(--brand-pink); }
+.bentoSmallYellow { background: var(--brand-yellow); }
+
+.photoSm {
+  width: 100%;
+  height: clamp(100px, 17vh, 160px);
+  border-radius: 12px;
+  margin-bottom: clamp(10px, 2vh, 18px);
+  flex-shrink: 0;
+}
+
+.bentoTitleSm {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 3.2vh, 28px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.bentoTextSm {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  opacity: 0.82;
+  flex: 1;
+}
+
+/* Extras card */
+.bentoExtras {
+  grid-column: 2 / span 2;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--brand-cream);
+  border-radius: 20px;
+  padding: clamp(20px, 3.5vh, 32px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.extrasTag {
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--brand-yellow);
+  font-weight: 700;
+  margin-bottom: clamp(12px, 2.2vh, 18px);
+}
+
+.extrasList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1.2vh, 10px);
+  font-size: clamp(13px, 1.8vh, 16px);
+  line-height: 1.5;
+}
+
+.extrasBullet {
+  color: var(--brand-orange);
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 20px var(--section-px) 60px;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 0.95;
+    margin-bottom: 28px;
+  }
+
+  .bento {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .bentoLarge {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .photoLarge {
+    height: 220px;
+  }
+
+  .bentoContent {
+    padding: 22px;
+  }
+
+  .bentoTitle {
+    font-size: 32px;
+  }
+
+  .bentoText {
+    font-size: 14px;
+  }
+
+  .bentoSmall {
+    padding: 20px;
+  }
+
+  .photoSm {
+    height: 140px;
+  }
+
+  .bentoTitleSm {
+    font-size: 24px;
+  }
+
+  .bentoExtras {
+    grid-column: 1;
+    padding: 22px;
+  }
+
+  .extrasList {
+    font-size: 14px;
+  }
+}

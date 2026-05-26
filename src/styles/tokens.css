@@ -1,0 +1,106 @@
+/*
+ * TOKENS — single source of design truth.
+ *
+ * To rebrand for a new client: edit values here.
+ * No component or section file should reference raw hex/px values.
+ */
+
+:root {
+  /* ─── BRAND PALETTE ─────────────────────────────────────────── */
+  --brand-orange: #FA4616;
+  --brand-yellow: #FFC72C;
+  --brand-pink:   #ECB3CB;
+  --brand-blue:   #5E8AB4;
+  --brand-ink:    #212322;
+  --brand-cream:  #FAF5EC;
+  --brand-paper:  #FFFFFF;
+
+  /* ─── ROLE-BASED COLOR (so components read by intent, not by name) */
+  --color-bg:           var(--brand-cream);
+  --color-text:         var(--brand-ink);
+  --color-text-muted:   rgba(33, 35, 34, 0.65);
+  --color-text-subtle:  rgba(33, 35, 34, 0.45);
+  --color-accent:       var(--brand-orange);
+  --color-accent-soft:  var(--brand-yellow);
+  --color-on-accent:    var(--brand-cream);
+  --color-cta-primary:  var(--brand-orange);
+  --color-cta-secondary:var(--brand-blue);
+  --color-divider:      rgba(33, 35, 34, 0.10);
+
+  /* ─── TYPOGRAPHY ────────────────────────────────────────────── */
+  --font-display: 'Anton', 'Stinger', 'Archivo Black', sans-serif;
+  --font-body:    'DM Sans', 'Nexa', system-ui, sans-serif;
+  --font-script:  'Caveat', cursive;
+  --font-mono:    ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Type scale (desktop @ 1440 canvas) */
+  --fs-hero:       clamp(56px, 6.1vw, 88px);
+  --fs-h2:         clamp(40px, 5vw, 72px);
+  --fs-h3:         clamp(24px, 2vw, 32px);
+  --fs-body-lg:    clamp(16px, 1.25vw, 18px);
+  --fs-body:       15px;
+  --fs-body-sm:    13px;
+  --fs-caption:    12px;
+  --fs-micro:      11px;
+
+  --lh-tight:      0.95;
+  --lh-snug:       1.15;
+  --lh-base:       1.5;
+  --lh-relaxed:    1.65;
+
+  --tracking-tight:  -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.06em;
+  --tracking-wider:  0.18em;
+  --tracking-widest: 0.22em;
+
+  /* ─── SPACING ───────────────────────────────────────────────── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* Section padding (responsive) */
+  --section-py:    clamp(56px, 8vw, 120px);
+  --section-px:    clamp(20px, 4.5vw, 64px);
+  --container-max: 1440px;
+
+  /* ─── RADII ─────────────────────────────────────────────────── */
+  --r-sm: 6px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 24px;
+  --r-pill: 999px;
+
+  /* ─── SHADOWS ───────────────────────────────────────────────── */
+  --shadow-sm: 0 4px 12px -4px rgba(0, 0, 0, 0.10);
+  --shadow-md: 0 10px 24px -8px rgba(0, 0, 0, 0.20);
+  --shadow-lg: 0 20px 50px -20px rgba(0, 0, 0, 0.25);
+  --shadow-xl: 0 24px 60px -12px rgba(0, 0, 0, 0.30);
+  --shadow-cta:0 16px 40px -8px rgba(250, 70, 22, 0.55), 0 4px 12px rgba(0, 0, 0, 0.18);
+
+  /* ─── MOTION ────────────────────────────────────────────────── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast:   140ms;
+  --t-base:   220ms;
+  --t-slow:   480ms;
+
+  /* ─── BRAND GESTURES ────────────────────────────────────────── */
+  --tilt: -8deg;       /* 8° gesture from brandbook logo */
+  --skew: -4deg;       /* hero highlight skew */
+
+  /* ─── LAYOUT ────────────────────────────────────────────────── */
+  --nav-height: 80px;
+  --z-nav:    50;
+  --z-sticky: 90;
+  --z-modal:  100;
+}

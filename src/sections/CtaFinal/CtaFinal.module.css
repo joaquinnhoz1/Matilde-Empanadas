@@ -1,0 +1,124 @@
+.section {
+  background: var(--brand-yellow);
+  color: var(--brand-ink);
+  padding: clamp(60px, 10vh, 120px) var(--section-px) clamp(50px, 8vh, 80px);
+  position: relative;
+  overflow: hidden;
+}
+
+.repulgue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(52px, 9vh, 120px);
+  line-height: 0.92;
+  text-transform: uppercase;
+  margin-bottom: clamp(24px, 4vh, 40px);
+}
+
+.titleScript {
+  font-family: var(--font-script);
+  font-weight: 700;
+  color: var(--brand-orange);
+  text-transform: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnOutline {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: clamp(14px, 2.5vh, 20px) 28px;
+  border-radius: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--font-body);
+  border: none;
+}
+
+.btnPrimary {
+  background: var(--brand-ink);
+  color: #fff;
+  box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.3);
+}
+
+.btnOutline {
+  background: transparent;
+  color: var(--brand-ink);
+  box-shadow: inset 0 0 0 2.5px var(--brand-ink);
+}
+
+.btnText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.btnTop {
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.btnTopMuted {
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  color: rgba(33, 35, 34, 0.65);
+  white-space: nowrap;
+}
+
+.btnName {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.8vh, 22px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.btnNameDark {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.8vh, 22px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--brand-ink);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px var(--section-px);
+  }
+
+  .title {
+    font-size: 60px;
+    line-height: 0.92;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .btnPrimary,
+  .btnOutline {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 14px 18px;
+  }
+}

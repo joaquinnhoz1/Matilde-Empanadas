@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(tar -tzf \"Maltilde Empanadas-handoff.tar.gz\")",
+      "Bash(tar -xzf \"Maltilde Empanadas-handoff.tar.gz\" --strip-components=1 -C \"C:\\\\Users\\\\Joaqu\\\\Downloads\\\\maltilde-extracted\")",
+      "PowerShell(New-Item -ItemType Directory -Path \"C:\\\\Users\\\\Joaqu\\\\Desktop\\\\IMPULSO WEB\\\\Matilde Empanadas\\\\src\\\\sections\\\\Marquee\" -Force)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__browser_batch",
+      "mcp__Claude_in_Chrome__computer",
+      "mcp__Claude_in_Chrome__javascript_tool",
+      "Bash(dir \"C:\\\\Users\\\\Joaqu\\\\Desktop\\\\IMPULSO WEB\\\\Matilde Empanadas\\\\public\" /b /s)",
+      "Bash(npm run *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(ls \"C:\\\\Users\\\\Joaqu\\\\Desktop\\\\Matilde Empanadas - Fotos\\\\03 - Combos y Promociones\")",
+      "Bash(ls \"C:\\\\Users\\\\Joaqu\\\\Desktop\\\\Matilde Empanadas - Fotos\\\\02 - Empanadas\" | grep -i dino)",
+      "Bash(cp \"/c/Users/Joaqu/Desktop/Matilde Empanadas - Fotos/03 - Combos y Promociones/Combo AHORRA \\\\$2.700.jpg\" \"/c/Users/Joaqu/Desktop/IMPULSO WEB/Matilde Empanadas/public/fotos/empanadas-portada.jpg\" && echo \"OK\")"
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+.section {
+  padding: clamp(60px, 10vh, 120px) var(--section-px);
+  background: var(--brand-ink);
+  color: var(--brand-cream);
+}
+
+.kicker {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  color: var(--brand-orange);
+  margin-bottom: 14px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5.5vh, 72px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.titleScript {
+  font-family: var(--font-script);
+  font-weight: 700;
+  color: var(--brand-orange);
+  text-transform: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: clamp(32px, 5vh, 60px);
+}
+
+/* CARD */
+.card {
+  background: var(--brand-orange);
+  color: var(--brand-cream);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.cardBlue {
+  background: #5E8AB4;
+}
+
+.tab {
+  display: inline-block;
+  background: var(--brand-cream);
+  color: var(--brand-orange);
+  padding: 8px 18px;
+  border-radius: var(--r-pill);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.tabBlue {
+  color: var(--brand-blue);
+}
+
+.cardInner {
+  padding: clamp(72px, 10vh, 88px) clamp(22px, 2.5vw, 32px) clamp(22px, 3vh, 32px);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 6.5vh, 72px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+}
+
+.nameCream {
+  color: var(--brand-cream);
+}
+
+.sub {
+  font-size: 14px;
+  opacity: 0.9;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.subCream {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.map {
+  width: 100%;
+  height: clamp(120px, 20vh, 200px);
+  border-radius: 12px;
+  margin-top: clamp(14px, 2.5vh, 22px);
+  margin-bottom: clamp(14px, 2.5vh, 20px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapPin {
+  font-size: 36px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+/* META */
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1.2vh, 10px);
+  font-size: clamp(13px, 1.8vh, 15px);
+  margin-bottom: clamp(16px, 2.5vh, 24px);
+}
+
+.meta div {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta dt {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  opacity: 0.65;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.meta dd {
+  margin: 0;
+}
+
+.metaCream {
+  color: var(--brand-cream);
+}
+
+.metaCream dt {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* BUTTON */
+.btnSticker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  background: var(--brand-orange);
+  color: #fff;
+  border: none;
+  padding: clamp(12px, 2vh, 16px) 18px;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-family: var(--font-body);
+  white-space: nowrap;
+}
+
+.btnStickerCream {
+  background: var(--brand-cream);
+  color: var(--brand-blue);
+}
+
+.btnName {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.8vh, 22px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btnNameBlue {
+  color: var(--brand-blue);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px var(--section-px);
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 28px;
+  }
+
+  .cardInner {
+    padding: 72px 22px 22px;
+  }
+
+  .name {
+    font-size: 48px;
+  }
+
+  .map {
+    height: 140px;
+  }
+
+  .meta {
+    font-size: 14px;
+    gap: 8px;
+  }
+}

@@ -67,7 +67,7 @@ export function Products() {
             <span className="sr-only">Pizza</span>
           </div>
           <div className={s.tag}>04 / PIZZAS</div>
-          <h3 className={s.bentoTitleSm}>Masa pala napolitana.</h3>
+          <h3 className={s.bentoTitleSm}>A la pala.</h3>
           <p className={s.bentoTextSm}>Fugazzeta, fungi, cuatro quesos y más.</p>
           <span className={s.bentoLink}>Ver pizzas →</span>
         </article>

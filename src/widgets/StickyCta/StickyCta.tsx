@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { site } from '@/config/site';
+import { useSite } from '@/hooks/useSite';
 import { whatsappUrl } from '@/utils/whatsapp';
 import { useScrollPast } from '@/hooks/useScrollPast';
 import s from './StickyCta.module.css';
@@ -14,6 +14,7 @@ function WaIcon({ size = 18, color = '#fff' }: { size?: number; color?: string }
 
 /** Desktop sticky — fixed bottom-right, appears after hero */
 export function DesktopStickyCta() {
+  const site = useSite();
   const [open, setOpen] = useState(false);
   const visible = useScrollPast(720);
   const [lp, cb] = site.branches.list;
@@ -66,6 +67,7 @@ export function DesktopStickyCta() {
 
 /** Mobile sticky — fixed bottom bar, always visible */
 export function MobileStickyCta() {
+  const site = useSite();
   const [open, setOpen] = useState(false);
   const [lp, cb] = site.branches.list;
 

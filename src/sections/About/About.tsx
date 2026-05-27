@@ -1,7 +1,8 @@
-import { site } from '@/config/site';
+import { useSite } from '@/hooks/useSite';
 import s from './About.module.css';
 
 export function About() {
+  const site = useSite();
   const a = site.about;
 
   return (

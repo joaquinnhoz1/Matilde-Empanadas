@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { site } from '@/config/site';
+import { useSite } from '@/hooks/useSite';
 import { whatsappUrl } from '@/utils/whatsapp';
 import logoMatilde from '@/assets/logo-matilde.png.png';
 import s from './Navbar.module.css';
 
 export function Navbar() {
+  const site = useSite();
   const [menuOpen, setMenuOpen] = useState(false);
   const lp = site.branches.list[0];
 

@@ -1,9 +1,10 @@
-import { site } from '@/config/site';
+import { useSite } from '@/hooks/useSite';
 import { whatsappUrl } from '@/utils/whatsapp';
 import { Navbar } from '@/sections/Navbar/Navbar';
 import s from './Hero.module.css';
 
 export function Hero() {
+  const site = useSite();
   const [lp, cb] = site.branches.list;
   const h = site.hero;
 

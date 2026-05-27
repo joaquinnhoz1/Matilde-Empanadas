@@ -1,7 +1,8 @@
-import { site } from '@/config/site';
+import { useSite } from '@/hooks/useSite';
 import s from './Pillars.module.css';
 
 export function Pillars() {
+  const site = useSite();
   return (
     <section className={s.pillars}>
       {site.pillars.map((p) => (

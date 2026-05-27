@@ -1,7 +1,8 @@
-import { site } from '@/config/site';
+import { useSite } from '@/hooks/useSite';
 import s from './WhyUs.module.css';
 
 export function WhyUs() {
+  const site = useSite();
   const w = site.whyUs;
 
   return (

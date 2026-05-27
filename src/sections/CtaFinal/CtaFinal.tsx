@@ -1,4 +1,4 @@
-import { site } from '@/config/site';
+import { useSite } from '@/hooks/useSite';
 import { whatsappUrl } from '@/utils/whatsapp';
 import s from './CtaFinal.module.css';
 
@@ -11,6 +11,7 @@ function WaIcon({ color = '#fff' }: { color?: string }) {
 }
 
 export function CtaFinal() {
+  const site = useSite();
   const c = site.ctaFinal;
   const [lp, cb] = site.branches.list;
 

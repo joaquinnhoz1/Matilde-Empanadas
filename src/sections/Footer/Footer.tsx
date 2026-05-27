@@ -1,8 +1,9 @@
-import { site } from '@/config/site';
+import { useSite } from '@/hooks/useSite';
 import logoMatilde from '@/assets/logo-matilde.png.png';
 import s from './Footer.module.css';
 
 export function Footer() {
+  const site = useSite();
   const f = site.footer;
   const b = site.brand;
 

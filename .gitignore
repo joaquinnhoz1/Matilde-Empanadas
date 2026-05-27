@@ -4,3 +4,4 @@ dist/
 *.local
 .env*
 !.env.example
+server/data/auth.json

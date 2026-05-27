@@ -1,4 +1,4 @@
-import { site } from '@/config/site';
+import { useSite } from '@/hooks/useSite';
 import { whatsappUrl } from '@/utils/whatsapp';
 import s from './Branches.module.css';
 
@@ -11,6 +11,7 @@ function WaIcon({ color = 'currentColor' }: { color?: string }) {
 }
 
 export function Branches() {
+  const site = useSite();
   const b = site.branches;
   const [lp, cb] = b.list;
 

@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import { site } from '@/config/site';
-import { carta } from '@/config/carta';
+import { useSite } from '@/hooks/useSite';
+import { useCarta } from '@/hooks/useCarta';
 import { CartaModal } from './CartaModal';
 import s from './Products.module.css';
 
 export function Products() {
+  const site = useSite();
+  const carta = useCarta();
   const p = site.products;
   const [vinos, dips] = p.secondary;
   const extras = p.extras;

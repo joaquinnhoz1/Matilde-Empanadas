@@ -8,9 +8,12 @@ import './styles/tokens.css';
 import './styles/global.css';
 
 import App from './App';
+import { AdminApp } from './admin/AdminApp';
+
+const isAdmin = window.location.pathname.startsWith('/admin');
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    {isAdmin ? <AdminApp /> : <App />}
   </StrictMode>,
 );

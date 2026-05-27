@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { carta as fallback, type CartaSection } from '@/config/carta';
+import { getApiBase } from '@/utils/apiBase';
 
 export function useCarta() {
   const [data, setData] = useState<CartaSection[]>(fallback);
 
   useEffect(() => {
-    const apiBase = window.location.port === '5173' ? 'http://localhost:3001/api' : '/api';
-    fetch(`${apiBase}/carta`)
+    fetch(`${getApiBase()}/carta`)
       .then(r => r.ok ? r.json() : null)
       .then(d => { if (d) setData(d); })
       .catch(() => {});

@@ -39,7 +39,8 @@
   --fw-display-h3:  400;  /* Stinger Regular — H3, títulos secundarios */
   --fw-body-strong: 700;  /* Nexa Bold      — etiquetas, botones, nav */
   --fw-body:        400;  /* Nexa Regular   — body, descripciones, forms */
-  --fw-body-light:  200;  /* Nexa ExtraLight — detalles, metadatos (Nexa Light pendiente) */
+  --fw-body-light:  300;  /* Nexa Light      — textos secundarios, metadatos */
+  --fw-body-xlight: 200;  /* Nexa ExtraLight — uso decorativo muy limitado */
 
   /* Type scale (desktop @ 1440 canvas) */
   --fs-hero:       clamp(56px, 6.1vw, 88px);

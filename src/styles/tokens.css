@@ -28,8 +28,8 @@
   --color-divider:      rgba(33, 35, 34, 0.10);
 
   /* ─── TYPOGRAPHY ────────────────────────────────────────────── */
-  --font-display: 'Anton', 'Stinger', 'Archivo Black', sans-serif;
-  --font-body:    'DM Sans', 'Nexa', system-ui, sans-serif;
+  --font-display: 'Stinger', 'Anton', 'Archivo Black', sans-serif;
+  --font-body:    'Nexa', 'DM Sans', system-ui, sans-serif;
   --font-script:  'Caveat', cursive;
   --font-mono:    ui-monospace, 'SF Mono', Menlo, monospace;
 

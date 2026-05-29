@@ -1,35 +1,119 @@
 /*
  * FONTS
  *
- * Currently using Google Fonts fallbacks:
- *   Anton    — fallback for STINGER (display, heavy condensed)
- *   DM Sans  — fallback for NEXA (body, neutral grotesque)
- *   Caveat   — fallback for MATILDE script (lettering, signature)
+ * Stinger  — tipografía principal (display, titulares)
+ *            self-hosted desde /fonts/StingerTrial-*.ttf
  *
- * When real Stinger + Nexa licenses arrive:
- *   1. Drop .woff2 files in /public/fonts/
- *   2. Replace the @import below with @font-face blocks
- *   3. Update --font-display / --font-body in tokens.css if names differ
+ * Nexa     — tipografía secundaria (cuerpo, UI)
+ *            self-hosted desde /fonts/Nexa-*.ttf
+ *            Pesos disponibles: ExtraLight (200) + Heavy (800)
+ *            Pendiente: Nexa Light / Regular / Bold para implementación completa
+ *
+ * Caveat   — script/lettering (firma Matilde, no reemplazado aún)
+ *            cargado desde Google Fonts
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
-
-/* Example for real fonts later:
+/* ─── Stinger ─────────────────────────────────────────── */
 
 @font-face {
   font-family: 'Stinger';
-  src: url('/fonts/Stinger-Heavy.woff2') format('woff2');
-  font-weight: 800 900;
+  src: url('/fonts/StingerTrial-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('/fonts/StingerTrial-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('/fonts/StingerTrial-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('/fonts/StingerTrial-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('/fonts/StingerTrial-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('/fonts/StingerTrial-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('/fonts/StingerTrial-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('/fonts/StingerTrial-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('/fonts/StingerTrial-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stinger';
+  src: url('/fonts/StingerTrial-HeavyItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ─── Nexa ────────────────────────────────────────────── */
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('/fonts/Nexa-ExtraLight.ttf') format('truetype');
+  font-weight: 200 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Nexa';
-  src: url('/fonts/Nexa-Regular.woff2') format('woff2');
-  font-weight: 400;
+  src: url('/fonts/Nexa-Heavy.ttf') format('truetype');
+  font-weight: 700 900;
   font-style: normal;
   font-display: swap;
 }
 
-*/
+/* ─── Script / Lettering ──────────────────────────────── */
+/* Caveat permanece como proxy del lettering manual de Matilde */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');

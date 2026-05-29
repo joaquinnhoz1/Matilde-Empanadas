@@ -9,7 +9,9 @@ body {
   font-feature-settings: 'ss01' 1;
 }
 
-h1, h2, h3 { font-family: var(--font-display); font-weight: normal; }
+h1 { font-family: var(--font-display); font-weight: var(--fw-display-h1); }
+h2 { font-family: var(--font-display); font-weight: var(--fw-display-h2); }
+h3 { font-family: var(--font-display); font-weight: var(--fw-display-h3); }
 
 a {
   color: inherit;

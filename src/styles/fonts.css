@@ -1,16 +1,14 @@
 /*
- * FONTS
+ * FONTS — Matilde Empanadas
  *
- * Stinger  — tipografía principal (display, titulares)
- *            self-hosted desde /fonts/StingerTrial-*.ttf
+ * Stinger  — tipografía principal (display, titulares)  [BrandBook p.13]
+ *            Thin(100) · Light(300) · Regular(400) · Bold(700) · Heavy(800)
  *
- * Nexa     — tipografía secundaria (cuerpo, UI)
- *            self-hosted desde /fonts/Nexa-*.ttf
- *            Pesos disponibles: ExtraLight (200) + Heavy (800)
- *            Pendiente: Nexa Light / Regular / Bold para implementación completa
+ * Nexa     — tipografía secundaria (cuerpo, UI)         [BrandBook p.14]
+ *            ExtraLight(200) · Regular(400) · Bold(700) · Heavy(800)
+ *            Pendiente: Nexa Light(300) para implementación completa
  *
- * Caveat   — script/lettering (firma Matilde, no reemplazado aún)
- *            cargado desde Google Fonts
+ * Caveat   — script/lettering (firma Matilde, sin reemplazo aún)
  */
 
 /* ─── Stinger ─────────────────────────────────────────── */
@@ -100,7 +98,23 @@
 @font-face {
   font-family: 'Nexa';
   src: url('/fonts/Nexa-ExtraLight.ttf') format('truetype');
-  font-weight: 200 400;
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('/fonts/Nexa-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('/fonts/Nexa-Bold.otf') format('opentype');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -108,7 +122,7 @@
 @font-face {
   font-family: 'Nexa';
   src: url('/fonts/Nexa-Heavy.ttf') format('truetype');
-  font-weight: 700 900;
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }

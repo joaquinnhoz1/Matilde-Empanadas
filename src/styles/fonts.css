@@ -3,15 +3,17 @@
  *
  * Stinger  — tipografía principal (display, titulares)  [BrandBook p.13]
  *            Thin(100) · Light(300) · Regular(400) · Bold(700) · Heavy(800)
+ *            unicode-range excluye dígitos U+0030-0039 → caen a Anton
  *
  * Nexa     — tipografía secundaria (cuerpo, UI)         [BrandBook p.14]
- *            ExtraLight(200) · Regular(400) · Bold(700) · Heavy(800)
- *            Pendiente: Nexa Light(300) para implementación completa
+ *            ExtraLight(200) · Light(300) · Regular(400) · Bold(700) · Heavy(800)
+ *
+ * Anton    — fallback para dígitos en contexto display (evita watermark de StingerTrial)
  *
  * Caveat   — script/lettering (firma Matilde, sin reemplazo aún)
  */
 
-/* ─── Stinger ─────────────────────────────────────────── */
+/* ─── Stinger — letras y símbolos (dígitos excluidos) ─── */
 
 @font-face {
   font-family: 'Stinger';
@@ -19,6 +21,7 @@
   font-weight: 100;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0000-002F, U+003A-10FFFF;
 }
 
 @font-face {
@@ -27,6 +30,7 @@
   font-weight: 100;
   font-style: italic;
   font-display: swap;
+  unicode-range: U+0000-002F, U+003A-10FFFF;
 }
 
 @font-face {
@@ -35,6 +39,7 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0000-002F, U+003A-10FFFF;
 }
 
 @font-face {
@@ -43,6 +48,7 @@
   font-weight: 300;
   font-style: italic;
   font-display: swap;
+  unicode-range: U+0000-002F, U+003A-10FFFF;
 }
 
 @font-face {
@@ -51,6 +57,7 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0000-002F, U+003A-10FFFF;
 }
 
 @font-face {
@@ -59,6 +66,7 @@
   font-weight: 400;
   font-style: italic;
   font-display: swap;
+  unicode-range: U+0000-002F, U+003A-10FFFF;
 }
 
 @font-face {
@@ -67,6 +75,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0000-002F, U+003A-10FFFF;
 }
 
 @font-face {
@@ -75,6 +84,7 @@
   font-weight: 700;
   font-style: italic;
   font-display: swap;
+  unicode-range: U+0000-002F, U+003A-10FFFF;
 }
 
 @font-face {
@@ -83,6 +93,7 @@
   font-weight: 800;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0000-002F, U+003A-10FFFF;
 }
 
 @font-face {
@@ -91,6 +102,7 @@
   font-weight: 800;
   font-style: italic;
   font-display: swap;
+  unicode-range: U+0000-002F, U+003A-10FFFF;
 }
 
 /* ─── Nexa ────────────────────────────────────────────── */
@@ -135,7 +147,8 @@
   font-display: swap;
 }
 
-/* ─── Script / Lettering ──────────────────────────────── */
-/* Caveat permanece como proxy del lettering manual de Matilde */
+/* ─── Script / Lettering + Anton (fallback dígitos) ──── */
+/* Anton cubre U+0030-0039 en contextos --font-display    */
+/* Caveat es proxy del lettering manual de Matilde        */
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;700&display=swap');
